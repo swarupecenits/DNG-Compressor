@@ -1,0 +1,26 @@
+{
+  "name": "dng-squeeze",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Lossless iPhone ProRAW (DNG) compressor that runs entirely in the browser — nothing is uploaded.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "build:wasm": "pwsh -NoProfile -File wasm/build.ps1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.6",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.2",
+    "vite": "^8.3.7",
+    "vitest": "^5.1.0"
+  }
+}
